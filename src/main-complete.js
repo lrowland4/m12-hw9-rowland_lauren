@@ -1,4 +1,3 @@
-
 const navButtons = document.querySelectorAll('#navbar ul li');
 const navBar = document.querySelector('#navbar');
 
@@ -15,8 +14,10 @@ function wrapper() {
   	let thisButtonLength = thisButtonText.length;
 
 
-    for (let i = 0; i < thisButtonLength; i++) {
-    	changeColor();
+    for (var i = 0; i < thisButtonLength; i++) {
+      setTimeout(function() {
+      	changeColor();
+       }, i * 1000);
 
     }
 
