@@ -14,7 +14,7 @@ function wrapper() {
   	let thisButtonLength = thisButtonText.length;
 
 
-    for (var i = 0; i < thisButtonLength; i++) {
+    for (let i = 0; i < thisButtonLength * 2; i++) {
       setTimeout(function() {
       	changeColor();
        }, i * 1000);
